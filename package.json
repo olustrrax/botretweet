@@ -1,0 +1,17 @@
+{
+  "name": "botkang",
+  "version": "1.0.0",
+  "description": "retweet about kang danniel",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "daniel"
+  ],
+  "author": "_xatrrsul",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+}
