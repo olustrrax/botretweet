@@ -73,7 +73,7 @@ function randomTrack (){
 
 function exceptKey (text){
     var except = [
-        'พร้อมส่ง','รวมส่ง','ขาย','มัดจำ',
+        'พร้อมส่ง','รวมส่ง','ขาย','มัดจำ','ค่าส่ง','ลทบ',
         'พรี', 'pre','PRE','Pre','Order','order','ปิดพรี',                
         'ตลาดนัดwannaone','ตลาดนัดWANNAONE',        
         'ตลาดนัดPRODUCE101','ตลาดนัดProduce101',        
@@ -81,7 +81,7 @@ function exceptKey (text){
         'สโลแกน',
     ];
     wordcut.init();
-    //var text = ' รำคาญพวกนี้';
+    //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
     var tweet_cut = wordcut.cut(text);
     var arr_word = tweet_cut.split('|');
     //console.log('wordcut: '+except.length);
