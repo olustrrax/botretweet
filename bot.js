@@ -3,7 +3,7 @@ var config = require('./config.js');
 var Twitter = new twit(config);
 var retweet = function() {
     var params = {
-      q: 'คังแดเนียล since:2017-09-11',
+      q: 'คังแดเนียล, Kangdaniel',
      // count: 100,
       result_type: 'recent',
       lang: 'th'    
