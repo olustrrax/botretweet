@@ -10,8 +10,12 @@
   "keywords": [
     "daniel"
   ],
-  "author": "_xatrrsul",
+  "author": "twitter @_xatrrsul",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/olustrrax/botretweet.git"
+  },
   "dependencies": {
     "twit": "^2.2.9"
   }
