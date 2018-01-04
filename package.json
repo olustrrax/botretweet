@@ -17,6 +17,7 @@
     "url": "git://github.com/olustrrax/botretweet.git"
   },
   "dependencies": {
-    "twit": "^2.2.9"
+    "twit": "^2.2.9",
+    "wordcut":"^0.8.1"
   }
 }
