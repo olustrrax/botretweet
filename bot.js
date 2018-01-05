@@ -23,14 +23,15 @@ var retweet = function() {
                 console.log('retweet_count: '+randomTweet.retweet_count);
                 var yesorno = exceptKey(randomTweet.text);
                 console.log('status: '+yesorno);
-                if(yesorno&&retweet_count > 5){
+                if(yesorno&&retweet_count > 2){
                     if(typeof randomTweet != 'undefined'){
                         Twitter.post('statuses/retweet/:id', {
                             //id: retweetId
                             id: randomTweet.id_str
                         }, function(err, response) {
-                            console.log('text: '+randomTweet.text);
+                            //console.log('text: '+randomTweet.text);
                             if (!err&&response) {
+                                console.log('text: '+randomTweet.text);                            
                                 console.log('[Retweeted!]');
                             }
                             if (err) {
@@ -43,7 +44,8 @@ var retweet = function() {
                     console.log("No tweet: "+randomTweet.text);
                 }
                 else{
-                    console.log('retweet_cont < 5: '+randomTweet.text);
+
+                    console.log('retweet_cont < 2: '+randomTweet.text);
                 }
                 
         }
@@ -65,7 +67,7 @@ function ranDom (arr) {
 function randomTrack (){
     var list = [
         'คุณแดน', 'คังแดเนียล', 'แดเนียล', 'เนียล', 'kangdaniel',
-        //'강다니엘',
+        'คังดาเนียล','ดาเนียล','แดนเยิ้ล',//'강다니엘',
     ];
     var key = ranDom(list);
     console.log('---------');
@@ -75,12 +77,13 @@ function randomTrack (){
 
 function exceptKey (text){
     var except = [
-        'พร้อมส่ง','รวมส่ง','ขาย','มัดจำ','ค่าส่ง','ลทบ','สั่งซื้อ',
+        'พร้อมส่ง','รวมส่ง','ขาย','มัดจำ','ค่าส่ง','ลทบ','สั่งซื้อ','รอบหิ้ว','นัดรับ',
         'พรี', 'pre','PRE','Pre','Order','order','ปิดพรี',                
         'ตลาดนัดwannaone','ตลาดนัดWANNAONE',        
         'ตลาดนัดPRODUCE101','ตลาดนัดProduce101',        
         'ลัทธิน้องเนียล','องนีเอล',        
         'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','@KangDaniel','เคส',
+        'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
