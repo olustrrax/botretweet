@@ -82,8 +82,9 @@ function exceptKey (text){
         'ตลาดนัดwannaone','ตลาดนัดWANNAONE',        
         'ตลาดนัดPRODUCE101','ตลาดนัดProduce101',        
         'ลัทธิน้องเนียล','องนีเอล',        
-        'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','@KangDaniel','เคส',
+        'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','sticker','เคส','Sticker',
         'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
+        '@KangDaniel','@daniel'
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
