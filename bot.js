@@ -2,6 +2,7 @@ var twit = require('twit');
 var wordcut = require("wordcut");
 var config = require('./config.js');
 var Twitter = new twit(config);
+var key = process.env.api_key;
 var retweet = function() {
     var params = {
       q:  randomTrack(),
