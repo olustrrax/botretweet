@@ -85,7 +85,7 @@ function exceptKey (text){
         'ลัทธิน้องเนียล','องนีเอล',        
         'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','sticker','เคส','Sticker',
         'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
-        '@KangDaniel','@daniel'
+        '@KangDaniel','@daniel','@kangdaniel'
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
