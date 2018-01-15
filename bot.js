@@ -79,13 +79,13 @@ function randomTrack (){
 function exceptKey (text){
     var except = [
         'พร้อมส่ง','รวมส่ง','ขาย','มัดจำ','ค่าส่ง','ลทบ','สั่งซื้อ','รอบหิ้ว','นัดรับ',
-        'พรี', 'pre','PRE','Pre','Order','order','ปิดพรี',                
-        'ตลาดนัดwannaone','ตลาดนัดWANNAONE',        
+        'พรี', 'pre','PRE','Pre','Order','order','ปิดพรี', 'Preorder','preorder',               
+        'ตลาดนัดwannaone','ตลาดนัดWANNAONE', 'เปิดหาร','สั่ง',     
         'ตลาดนัดPRODUCE101','ตลาดนัดProduce101',        
         'ลัทธิน้องเนียล','องนีเอล',        
         'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','sticker','เคส','Sticker',
         'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
-        '@KangDaniel','@daniel','@kangdaniel'
+        '@KangDaniel','@daniel','@kangdaniel','@_slateO825'
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
