@@ -24,7 +24,7 @@ var retweet = function() {
                 console.log('retweet_count: '+randomTweet.retweet_count);
                 var yesorno = exceptKey(randomTweet.text);
                 console.log('status: '+yesorno);
-                if(yesorno&&retweet_count > 2){
+                if(yesorno&&retweet_count > 100){
                     if(typeof randomTweet != 'undefined'){
                         Twitter.post('statuses/retweet/:id', {
                             //id: retweetId
@@ -85,7 +85,7 @@ function exceptKey (text){
         'ลัทธิน้องเนียล','องนีเอล',        
         'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','sticker','เคส','Sticker',
         'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
-        '@KangDaniel','@daniel','@kangdaniel','@_slateO825'
+        '@KangDaniel','@daniel','@kangdaniel','slate'
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
