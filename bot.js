@@ -57,7 +57,7 @@ var retweet = function() {
 
 retweet();
 
-setInterval(retweet, 10000);
+setInterval(retweet, 9000);
 
 // function to generate a random tweet tweet
 function ranDom (arr) {
@@ -67,7 +67,7 @@ function ranDom (arr) {
 
 function randomTrack (){
     var list = [
-        'คุณแดน', 'คังแดเนียล', 'แดเนียล', 'เนียล', 'kangdaniel',
+        'คุณแดน', 'คังแดเนียล', 'แดเนียล', 'เนียล', '#kangdaniel',
         'คังดาเนียล','ดาเนียล','แดนเยิ้ล',//'강다니엘',
     ];
     var key = ranDom(list);
@@ -85,7 +85,7 @@ function exceptKey (text){
         'ลัทธิน้องเนียล','องนีเอล',        
         'สโลแกน', 'สติ๊กเกอร์','การ์ดใส','พัดใส','sticker','เคส','Sticker',
         'Pls','Plz','PLS','แดนอุน','แดนฮุน','สตก',
-        '@KangDaniel','@daniel','@kangdaniel','slate'
+        '@KangDaniel','@daniel','@kangdaniel','slate','@_slateO825'
     ];
     wordcut.init();
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
