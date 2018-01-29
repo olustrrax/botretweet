@@ -68,7 +68,8 @@ function ranDom (arr) {
 function randomTrack (){
     var list = [
         'คุณแดน', 'คังแดเนียล', 'แดเนียล', 'เนียล', '#kangdaniel',
-        'คังดาเนียล','ดาเนียล','แดนเยิ้ล',//'강다니엘',
+        'คังดาเนียล','ดาเนียล','แดนเยิ้ล',
+        //'강다니엘',
     ];
     var key = ranDom(list);
     console.log('---------');
