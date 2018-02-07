@@ -21,9 +21,9 @@ var retweet = function() {
                 var tweet = data.statuses;
                 var randomTweet = ranDom(tweet);
                 var retweet_count = randomTweet.retweet_count;
-                console.log('retweet_count: '+randomTweet.retweet_count);
+                // console.log('retweet_count: '+randomTweet.retweet_count);
                 var yesorno = exceptKey(randomTweet.text);
-                console.log('status: '+yesorno);
+                // console.log('status: '+yesorno);
                 var status = true;
                 if(yesorno=='passed'){
                     var status = true;
@@ -39,23 +39,23 @@ var retweet = function() {
                         }, function(err, response) {
                             //console.log('text: '+randomTweet.text);
                             if (!err&&response) {
-                                console.log('text: '+randomTweet.text);                            
-                                console.log('[Retweeted!]');
+                                // console.log('text: '+randomTweet.text);                            
+                                // console.log('[Retweeted!]');
                             }
                             if (err) {
-                                console.log('text: '+randomTweet.text); 
-                                console.log('['+err+']');
+                                // console.log('text: '+randomTweet.text); 
+                                // console.log('['+err+']');
                             }
                         });
                     }
                 } 
-                else if(!status){
-                    console.log("No tweet: "+randomTweet.text);
-                }
-                else{
+                // else if(!status){
+                //     console.log("No tweet: "+randomTweet.text);
+                // }
+                // else{
 
-                    console.log('retweet_cont < 100: '+randomTweet.text);
-                }
+                //     console.log('retweet_cont < 100: '+randomTweet.text);
+                // }
                 
         }
           
@@ -80,8 +80,8 @@ function randomTrack (){
         //'강다니엘',
     ];
     var key = ranDom(list);
-    console.log('---------');
-    console.log('keyword: '+key);
+    // console.log('---------');
+    // console.log('keyword: '+key);
     return key;
 }
 
@@ -100,7 +100,7 @@ function exceptKey (text){
     //var text = 'ตลาดนัดWANNAONE รำคาญพวกนี้';
     var tweet_cut = wordcut.cut(text);
     var arr_word = tweet_cut.split('|');
-    console.log('wordcut: '+tweet_cut);
+    // console.log('wordcut: '+tweet_cut);
     for( var i = 0; i < arr_word.length; i++){
         for(var j = 0; j<except.length; j++){
             if(arr_word[i] == except[j]){
